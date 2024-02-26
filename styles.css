@@ -1,0 +1,224 @@
+/* Basic styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #9ACD32;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+  background-color: #fff000;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  background-color: #9ACD32;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+h2#sym::before {
+  content: ""; /* Empty content */
+  display: inline-block;
+  width: 50px; /* Adjust width as needed */
+  height: 30px;
+  background-image: url("odalogo.jpg"); /* Replace with your logo path */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+#logo {
+  max-width: 100px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop image to fit container */
+}
+
+
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+
+/* Footer */
+footer {
+  background-color: #111111;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+}
+
+/* Add styles for loading indicator here */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+}
+
+#login-form button:hover {
+  background-color: #007bff;
+}
+
+#login-form {
+  /* Center the form on all screen sizes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for larger screens */
+  margin: 0 auto; /* Center on larger screens */
+  background-color: #f5f5f5; /* Optional background color */
+  border-radius: 5px; /* Optional rounded corners */
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 100%;
+  margin-bottom: 10px;
+  font-size: 16px; /* Ensure readability */
+}
+
+#login-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#login-form button:hover {
+  background-color: #0062cc; /* Darken on hover */
+}
+
+#login-form a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+#error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 480px) {
+  #login-form {
+    padding: 10px;
+  }
+
+  #login-form input[type="email"],
+  #login-form input[type="password"] {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+}
+
+
+/* Add animation styles for loading indicator and error messages here */
+
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+
+  header {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  nav li {
+    display: block; /* List items stacked vertically */
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  ul {
+    padding-left: 15px; /* Adjust indentation for smaller screens */
+  }
+}
+
+/* Adjust styles as needed for the specific look and feel you want */
